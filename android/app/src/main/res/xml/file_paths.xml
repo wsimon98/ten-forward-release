@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- the downloaded APK, handed to Android's installer -->
+    <external-files-path
+        name="app_updates"
+        path="." />
+</paths>

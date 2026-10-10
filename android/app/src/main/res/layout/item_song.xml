@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One song in the picker. Sized for a phone on a dash mount: the row itself is a 76dp tap
+     target and the line-it-up button is its own 64dp one, so neither needs aiming at. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/bg_panel"
+    android:gravity="center_vertical"
+    android:minHeight="76dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Song"
+            android:textColor="@color/peach"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/muted"
+            android:textSize="12.5sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        android:textColor="@color/dim"
+        android:textSize="12.5sp" />
+
+    <TextView
+        android:id="@+id/queue"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/teal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>

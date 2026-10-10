@@ -1,0 +1,7 @@
+﻿{
+    "version":  "1.1.0",
+    "build":  12,
+    "size_mb":  5.08,
+    "built":  1790107648,
+    "notes":  "Survives dead zones (song cache), progress bar, queue screen, feeds the generator from the car"
+}

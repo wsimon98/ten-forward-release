@@ -1,0 +1,1651 @@
+{
+ "genres": [
+  {
+   "genre": "pop",
+   "pairs_with": [
+    "rock",
+    "electro",
+    "rap",
+    "funk",
+    "j-pop",
+    "punk"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "synthpop",
+   "pairs_with": [
+    "pop",
+    "synthwave",
+    "house",
+    "new wave",
+    "rap",
+    "rock"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "dance pop",
+   "pairs_with": [
+    "pop",
+    "electro",
+    "r&b"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "electropop",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "alternative rock",
+    "indie pop",
+    "house",
+    "hardcore"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "indie pop",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "rap",
+    "electropop",
+    "hip hop",
+    "trap"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "dream pop",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "ambient",
+    "bedroom pop",
+    "synthwave",
+    "shoegaze"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "bedroom pop",
+   "pairs_with": [
+    "pop",
+    "dream pop",
+    "lo-fi",
+    "funk",
+    "rap",
+    "grunge"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "power pop",
+   "pairs_with": [
+    "pop",
+    "funk",
+    "electro",
+    "rap",
+    "rock"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "k-pop",
+   "pairs_with": [
+    "pop",
+    "electro",
+    "trap",
+    "drill",
+    "r&b",
+    "rap"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "pop rock",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "punk",
+    "alternative rock",
+    "comedy",
+    "opera"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "hyperpop",
+   "pairs_with": [
+    "pop",
+    "dubstep",
+    "electro",
+    "house",
+    "emo",
+    "j-core"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "acoustic pop",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "folk rock"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "folk-pop",
+   "pairs_with": [
+    "pop",
+    "folk",
+    "rock"
+   ],
+   "family": "pop"
+  },
+  {
+   "genre": "rock",
+   "pairs_with": [
+    "pop",
+    "metal",
+    "punk",
+    "hard rock",
+    "alternative rock",
+    "emo"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "alternative rock",
+   "pairs_with": [
+    "rock",
+    "metal",
+    "pop",
+    "hard rock",
+    "nu metal",
+    "electronic rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "indie rock",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "alternative rock",
+    "electro",
+    "heartland rock",
+    "new wave"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "classic rock",
+   "pairs_with": [
+    "rock",
+    "acoustic rock",
+    "folk",
+    "pop",
+    "indie rock",
+    "indie pop"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "hard rock",
+   "pairs_with": [
+    "rock",
+    "metal",
+    "alternative rock",
+    "gothic metal",
+    "industrial metal",
+    "pop"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "grunge",
+   "pairs_with": [
+    "rock",
+    "metal",
+    "pop",
+    "emo",
+    "punk",
+    "swing"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "southern rock",
+   "pairs_with": [
+    "rock",
+    "blues",
+    "alternative rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "heartland rock",
+   "pairs_with": [
+    "rock",
+    "indie rock",
+    "new wave",
+    "alternative rock",
+    "post-punk",
+    "punk"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "folk rock",
+   "pairs_with": [
+    "rock",
+    "folk",
+    "pop",
+    "harp",
+    "medieval folk",
+    "acoustic pop"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "psychedelic rock",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "hard rock",
+    "indie rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "soft rock",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "soul",
+    "new wave",
+    "jazz"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "blues rock",
+   "pairs_with": [
+    "rock",
+    "blues",
+    "indie rock",
+    "new wave",
+    "pop",
+    "punk"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "country rock",
+   "pairs_with": [
+    "rock",
+    "country",
+    "hard rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "emo",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "punk",
+    "pop punk",
+    "hardcore",
+    "swing"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "new wave",
+   "pairs_with": [
+    "rock",
+    "post-punk",
+    "punk",
+    "alternative rock",
+    "pop",
+    "heartland rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "rockabilly",
+   "pairs_with": [
+    "pop",
+    "emo",
+    "rock",
+    "punk",
+    "pop punk",
+    "swing"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "christian rock",
+   "pairs_with": [
+    "rock"
+   ],
+   "family": "rock"
+  },
+  {
+   "genre": "hip hop",
+   "pairs_with": [
+    "rap",
+    "pop",
+    "trap",
+    "ambient",
+    "house",
+    "electro"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "rap",
+   "pairs_with": [
+    "hip hop",
+    "pop",
+    "trap",
+    "rock",
+    "electro",
+    "metal"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "trap",
+   "pairs_with": [
+    "rap",
+    "pop",
+    "hip hop",
+    "house",
+    "electro",
+    "phonk"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "drill",
+   "pairs_with": [
+    "rap",
+    "trap",
+    "uk drill",
+    "pop",
+    "electro",
+    "breakbeat"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "uk drill",
+   "pairs_with": [
+    "drill",
+    "trap",
+    "rap"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "boom bap",
+   "pairs_with": [
+    "rap",
+    "hip hop",
+    "lo-fi",
+    "soul",
+    "pop",
+    "trap"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "old school hip hop",
+   "pairs_with": [
+    "hip hop"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "emo rap",
+   "pairs_with": [
+    "rap",
+    "pop",
+    "emo",
+    "punk",
+    "hardcore",
+    "pop punk"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "melodic rap",
+   "pairs_with": [
+    "rap",
+    "hip hop",
+    "trap"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "phonk",
+   "pairs_with": [
+    "trap",
+    "aggressive phonk",
+    "electro",
+    "house",
+    "pop",
+    "funk"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "pop rap",
+   "pairs_with": [
+    "rap",
+    "pop",
+    "trap",
+    "hip hop",
+    "electro",
+    "house"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "gospel rap",
+   "pairs_with": [
+    "rap",
+    "gospel",
+    "pop"
+   ],
+   "family": "hip-hop"
+  },
+  {
+   "genre": "country",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "bluegrass",
+    "folk",
+    "banjo",
+    "jazz"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "outlaw country",
+   "pairs_with": [
+    "country"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "alternative country",
+   "pairs_with": [
+    "country",
+    "bluegrass",
+    "pop",
+    "acid jazz",
+    "jazz",
+    "rock"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "contemporary country",
+   "pairs_with": [
+    "country"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "honky tonk",
+   "pairs_with": [
+    "neo-rockabilly",
+    "rockabilly"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "bluegrass",
+   "pairs_with": [
+    "country",
+    "banjo",
+    "alternative country",
+    "pop",
+    "folk",
+    "rock"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "country pop",
+   "pairs_with": [
+    "country",
+    "pop",
+    "alternative country",
+    "steel guitar"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "country rap",
+   "pairs_with": [
+    "country",
+    "rap",
+    "alternative country",
+    "banjo",
+    "bluegrass",
+    "jazz"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "country blues",
+   "pairs_with": [
+    "country",
+    "blues"
+   ],
+   "family": "country"
+  },
+  {
+   "genre": "edm",
+   "pairs_with": [
+    "pop",
+    "electro",
+    "house",
+    "dubstep",
+    "rock",
+    "funk"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "house",
+   "pairs_with": [
+    "electro",
+    "techno",
+    "pop",
+    "trance",
+    "electro swing",
+    "deep house"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "deep house",
+   "pairs_with": [
+    "house",
+    "hip hop",
+    "drum and bass",
+    "pop",
+    "electro",
+    "phonk"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "tropical house",
+   "pairs_with": [
+    "house",
+    "tropical",
+    "edm",
+    "synthwave"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "techno",
+   "pairs_with": [
+    "house",
+    "trance",
+    "electro",
+    "ambient",
+    "funk",
+    "pop"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "trance",
+   "pairs_with": [
+    "house",
+    "techno",
+    "ambient",
+    "funk",
+    "pop",
+    "hip hop"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "dubstep",
+   "pairs_with": [
+    "funk",
+    "bounce",
+    "pop",
+    "rock",
+    "j-pop",
+    "edm"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "melodic dubstep",
+   "pairs_with": [
+    "dubstep",
+    "bass music",
+    "brostep",
+    "future bass",
+    "moombahton",
+    "riddim"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "drum and bass",
+   "pairs_with": [
+    "electro",
+    "house",
+    "pop",
+    "rap",
+    "deep house",
+    "jungle"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "future bass",
+   "pairs_with": [
+    "kawaii future bass",
+    "dubstep",
+    "house",
+    "trap",
+    "bass music",
+    "brostep"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "electronica",
+   "pairs_with": [
+    "house",
+    "german electronica",
+    "pop",
+    "rap",
+    "trap",
+    "bass house"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "synthwave",
+   "pairs_with": [
+    "pop",
+    "electro",
+    "house",
+    "disco",
+    "ambient",
+    "funk"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "disco",
+   "pairs_with": [
+    "electro",
+    "pop",
+    "funk",
+    "synthwave",
+    "house",
+    "soul"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "nu disco",
+   "pairs_with": [
+    "disco",
+    "trap"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "electro swing",
+   "pairs_with": [
+    "electro",
+    "house",
+    "swing",
+    "pop",
+    "jazz",
+    "punk"
+   ],
+   "family": "electronic"
+  },
+  {
+   "genre": "r&b",
+   "pairs_with": [
+    "pop",
+    "soul",
+    "funk",
+    "rap",
+    "electro",
+    "swing"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "contemporary r&b",
+   "pairs_with": [
+    "r&b",
+    "edm",
+    "pop"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "alternative r&b",
+   "pairs_with": [
+    "r&b",
+    "electro",
+    "funk"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "neo soul",
+   "pairs_with": [
+    "soul",
+    "edm",
+    "jazz"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "soul",
+   "pairs_with": [
+    "r&b",
+    "pop",
+    "funk",
+    "blues",
+    "gospel",
+    "rock"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "motown",
+   "pairs_with": [
+    "soul",
+    "blues",
+    "funk",
+    "hammond organ"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "funk",
+   "pairs_with": [
+    "pop",
+    "bounce",
+    "rock",
+    "jazz",
+    "dubstep",
+    "soul"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "new jack swing",
+   "pairs_with": [
+    "swing",
+    "acid jazz",
+    "jazz",
+    "soul",
+    "lo-fi",
+    "pop"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "gospel",
+   "pairs_with": [
+    "soul",
+    "pop",
+    "rap",
+    "r&b",
+    "rock",
+    "blues"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "worship",
+   "pairs_with": [
+    "praise",
+    "r&b",
+    "pop"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "gospel soul",
+   "pairs_with": [
+    "gospel",
+    "soul"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "doo-wop",
+   "pairs_with": [
+    "pop",
+    "funk",
+    "soul"
+   ],
+   "family": "rnb-soul"
+  },
+  {
+   "genre": "jazz",
+   "pairs_with": [
+    "swing",
+    "rock",
+    "acid jazz",
+    "funk",
+    "pop",
+    "lo-fi"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "smooth jazz",
+   "pairs_with": [
+    "jazz",
+    "ambient",
+    "lo-fi",
+    "ambient pop",
+    "r&b",
+    "soul"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "vocal jazz",
+   "pairs_with": [
+    "jazz",
+    "downtempo"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "swing",
+   "pairs_with": [
+    "electro",
+    "jazz",
+    "electro swing",
+    "pop",
+    "house",
+    "rock"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "big band",
+   "pairs_with": [
+    "swing",
+    "classical",
+    "ambient",
+    "ambient house",
+    "cello",
+    "funk"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "jazz fusion",
+   "pairs_with": [
+    "jazz",
+    "rock",
+    "acid jazz",
+    "alternative rock",
+    "funk",
+    "violin"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "lounge",
+   "pairs_with": [
+    "jazz",
+    "chill lounge",
+    "electro",
+    "chill out",
+    "bossa nova",
+    "house"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "bossa nova",
+   "pairs_with": [
+    "jazz",
+    "lo-fi",
+    "pop",
+    "rock",
+    "lounge",
+    "drill"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "blues",
+   "pairs_with": [
+    "rock",
+    "soul",
+    "delta blues",
+    "jazz",
+    "pop",
+    "blues rock"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "delta blues",
+   "pairs_with": [
+    "blues",
+    "chicago blues",
+    "electric blues",
+    "violin"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "chicago blues",
+   "pairs_with": [
+    "blues",
+    "delta blues",
+    "electric blues",
+    "violin"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "electric blues",
+   "pairs_with": [
+    "blues",
+    "chicago blues",
+    "delta blues",
+    "violin"
+   ],
+   "family": "jazz-blues"
+  },
+  {
+   "genre": "folk",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "harp",
+    "anti-folk",
+    "violin",
+    "cello"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "indie folk",
+   "pairs_with": [
+    "folk",
+    "folk-pop",
+    "pop",
+    "rock",
+    "accordion"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "appalachian folk",
+   "pairs_with": [
+    "folk",
+    "dream pop",
+    "pop",
+    "anti-folk"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "irish folk",
+   "pairs_with": [
+    "folk",
+    "pop"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "celtic",
+   "pairs_with": [
+    "folk",
+    "harp",
+    "choral",
+    "violin",
+    "rap",
+    "pop"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "singer-songwriter",
+   "pairs_with": [
+    "violin",
+    "pop",
+    "reggae",
+    "rock",
+    "punk",
+    "singer-songwriter pop"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "shanty",
+   "pairs_with": [
+    "violin",
+    "accordion"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "cajun",
+   "pairs_with": [
+    "folk",
+    "new wave",
+    "pop",
+    "rock",
+    "synthpop"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "reggae",
+   "pairs_with": [
+    "pop",
+    "roots reggae",
+    "reggae fusion",
+    "post-punk",
+    "dub",
+    "ska"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "ska",
+   "pairs_with": [
+    "pop",
+    "rock",
+    "punk",
+    "opera",
+    "reggae",
+    "punk ska"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "reggaeton",
+   "pairs_with": [
+    "pop",
+    "afrobeat",
+    "reggae",
+    "trap",
+    "house",
+    "pop urbaine"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "mariachi",
+   "pairs_with": [
+    "salsa",
+    "classical",
+    "classical guitar"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "flamenco",
+   "pairs_with": [
+    "rock",
+    "math rock",
+    "flamenco guitar",
+    "jazz",
+    "trap",
+    "trance"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "afrobeats",
+   "pairs_with": [
+    "synthpop"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "polka",
+   "pairs_with": [
+    "pop",
+    "accordion",
+    "punk",
+    "opera",
+    "rock",
+    "folk"
+   ],
+   "family": "folk-world"
+  },
+  {
+   "genre": "classical",
+   "pairs_with": [
+    "orchestra",
+    "violin",
+    "classical piano",
+    "baroque",
+    "folk",
+    "classical guitar"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "orchestral soundtrack",
+   "pairs_with": [
+    "soundtrack"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "string quartet",
+   "pairs_with": [
+    "downtempo"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "neo-classical",
+   "pairs_with": [
+    "classical",
+    "baroque",
+    "anti-folk",
+    "folk"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "classical piano",
+   "pairs_with": [
+    "classical"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "opera",
+   "pairs_with": [
+    "rock",
+    "metal",
+    "orchestra",
+    "violin",
+    "pop",
+    "ska"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "choral",
+   "pairs_with": [
+    "celtic",
+    "pop",
+    "ambient",
+    "folk",
+    "opera",
+    "ambient techno"
+   ],
+   "family": "classical"
+  },
+  {
+   "genre": "metal",
+   "pairs_with": [
+    "rock",
+    "nu metal",
+    "hard rock",
+    "punk",
+    "power metal",
+    "hardcore"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "power metal",
+   "pairs_with": [
+    "metal",
+    "symphonic power metal",
+    "thrash metal",
+    "rock",
+    "progressive power metal"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "symphonic metal",
+   "pairs_with": [
+    "metal",
+    "gothic alternative",
+    "opera",
+    "rock",
+    "alternative metal",
+    "emo"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "death metal",
+   "pairs_with": [
+    "metal",
+    "melodic death metal",
+    "doom metal",
+    "metalcore",
+    "deathcore",
+    "rock"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "thrash metal",
+   "pairs_with": [
+    "metal",
+    "power metal",
+    "speed metal",
+    "black metal",
+    "glam metal"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "nu metal",
+   "pairs_with": [
+    "metal",
+    "rock",
+    "alternative rock",
+    "rap",
+    "electronic rock",
+    "hardcore"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "alternative metal",
+   "pairs_with": [
+    "metal",
+    "rock",
+    "gothic rock",
+    "nu metal",
+    "alternative rock",
+    "gothic metal"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "metalcore",
+   "pairs_with": [
+    "metal",
+    "rock",
+    "hardcore",
+    "progressive rock",
+    "post-hardcore",
+    "pop"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "folk metal",
+   "pairs_with": [
+    "metal",
+    "folk",
+    "death metal",
+    "melodic death metal"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "punk",
+   "pairs_with": [
+    "rock",
+    "pop",
+    "pop punk",
+    "emo",
+    "metal",
+    "post-punk"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "pop punk",
+   "pairs_with": [
+    "punk",
+    "pop",
+    "emo",
+    "hardcore",
+    "rock",
+    "electro"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "post-hardcore",
+   "pairs_with": [
+    "hardcore",
+    "metal",
+    "emo",
+    "rock",
+    "metalcore",
+    "nu metal"
+   ],
+   "family": "metal-punk"
+  },
+  {
+   "genre": "ambient",
+   "pairs_with": [
+    "house",
+    "pop",
+    "techno",
+    "electro",
+    "lo-fi",
+    "trance"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "lo-fi",
+   "pairs_with": [
+    "ambient",
+    "jazz",
+    "house",
+    "funk",
+    "hip hop",
+    "pop"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "chillhop",
+   "pairs_with": [
+    "lo-fi",
+    "ambient",
+    "edm",
+    "future garage",
+    "hip hop",
+    "jazz"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "chillwave",
+   "pairs_with": [
+    "chillstep",
+    "ambient",
+    "lo-fi",
+    "vaporwave",
+    "house",
+    "bubblegum bass"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "downtempo",
+   "pairs_with": [
+    "ambient",
+    "lo-fi",
+    "house",
+    "metal",
+    "jazz",
+    "phonk"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "trip hop",
+   "pairs_with": [
+    "abstract hip hop",
+    "electro",
+    "hip hop",
+    "house",
+    "jazz",
+    "swing"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "vaporwave",
+   "pairs_with": [
+    "synthwave",
+    "mallsoft",
+    "ambient",
+    "lo-fi",
+    "house",
+    "chillwave"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "new age",
+   "pairs_with": [
+    "ambient",
+    "dark ambient"
+   ],
+   "family": "ambient-chill"
+  },
+  {
+   "genre": "video game music",
+   "pairs_with": [
+    "soundtrack"
+   ],
+   "family": "other"
+  },
+  {
+   "genre": "broadway",
+   "pairs_with": [],
+   "family": "other"
+  },
+  {
+   "genre": "a cappella",
+   "pairs_with": [
+    "jazz",
+    "bossa nova",
+    "pop"
+   ],
+   "family": "other"
+  },
+  {
+   "genre": "comedy",
+   "pairs_with": [
+    "pop",
+    "pop rock",
+    "rock",
+    "cumbia",
+    "rumba",
+    "metal"
+   ],
+   "family": "other"
+  },
+  {
+   "genre": "parody",
+   "pairs_with": [
+    "opera"
+   ],
+   "family": "other"
+  }
+ ],
+ "families": {
+  "pop": [
+   "pop",
+   "synthpop",
+   "dance pop",
+   "electropop",
+   "indie pop",
+   "dream pop",
+   "bedroom pop",
+   "power pop",
+   "k-pop",
+   "pop rock",
+   "hyperpop",
+   "acoustic pop",
+   "folk-pop"
+  ],
+  "rock": [
+   "rock",
+   "alternative rock",
+   "indie rock",
+   "classic rock",
+   "hard rock",
+   "grunge",
+   "southern rock",
+   "heartland rock",
+   "folk rock",
+   "psychedelic rock",
+   "soft rock",
+   "blues rock",
+   "country rock",
+   "emo",
+   "new wave",
+   "rockabilly",
+   "christian rock"
+  ],
+  "hip-hop": [
+   "hip hop",
+   "rap",
+   "trap",
+   "drill",
+   "uk drill",
+   "boom bap",
+   "old school hip hop",
+   "emo rap",
+   "melodic rap",
+   "phonk",
+   "pop rap",
+   "gospel rap"
+  ],
+  "country": [
+   "country",
+   "outlaw country",
+   "alternative country",
+   "contemporary country",
+   "honky tonk",
+   "bluegrass",
+   "country pop",
+   "country rap",
+   "country blues"
+  ],
+  "electronic": [
+   "edm",
+   "house",
+   "deep house",
+   "tropical house",
+   "techno",
+   "trance",
+   "dubstep",
+   "melodic dubstep",
+   "drum and bass",
+   "future bass",
+   "electronica",
+   "synthwave",
+   "disco",
+   "nu disco",
+   "electro swing"
+  ],
+  "rnb-soul": [
+   "r&b",
+   "contemporary r&b",
+   "alternative r&b",
+   "neo soul",
+   "soul",
+   "motown",
+   "funk",
+   "new jack swing",
+   "gospel",
+   "worship",
+   "gospel soul",
+   "doo-wop"
+  ],
+  "jazz-blues": [
+   "jazz",
+   "smooth jazz",
+   "vocal jazz",
+   "swing",
+   "big band",
+   "jazz fusion",
+   "lounge",
+   "bossa nova",
+   "blues",
+   "delta blues",
+   "chicago blues",
+   "electric blues"
+  ],
+  "folk-world": [
+   "folk",
+   "indie folk",
+   "appalachian folk",
+   "irish folk",
+   "celtic",
+   "singer-songwriter",
+   "shanty",
+   "cajun",
+   "reggae",
+   "ska",
+   "reggaeton",
+   "mariachi",
+   "flamenco",
+   "afrobeats",
+   "polka"
+  ],
+  "classical": [
+   "classical",
+   "orchestral soundtrack",
+   "string quartet",
+   "neo-classical",
+   "classical piano",
+   "opera",
+   "choral"
+  ],
+  "metal-punk": [
+   "metal",
+   "power metal",
+   "symphonic metal",
+   "death metal",
+   "thrash metal",
+   "nu metal",
+   "alternative metal",
+   "metalcore",
+   "folk metal",
+   "punk",
+   "pop punk",
+   "post-hardcore"
+  ],
+  "ambient-chill": [
+   "ambient",
+   "lo-fi",
+   "chillhop",
+   "chillwave",
+   "downtempo",
+   "trip hop",
+   "vaporwave",
+   "new age"
+  ],
+  "other": [
+   "video game music",
+   "broadway",
+   "a cappella",
+   "comedy",
+   "parody"
+  ]
+ }
+}

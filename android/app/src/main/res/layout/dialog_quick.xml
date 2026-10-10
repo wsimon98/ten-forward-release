@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quick create: everything a channel needs, said in plain words. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Say what the channel is, in your own words. Name acts or songs you want it to sit next to."
+            android:textColor="@color/muted"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/q_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/panel2"
+            android:gravity="top"
+            android:hint="90s alt rock for driving at night, loud quiet loud, a bit angry. Nirvana, Bush, Foo Fighters."
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="4"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textColorHint="@color/dim"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/q_inst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Instrumental — no singing"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/q_explicit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Swearing allowed in the lyrics"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/q_cover_row"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covers (%)"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/q_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/peach"
+                    android:textColorHint="@color/dim"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Song length (minutes)"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/q_mins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:hint="the usual"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="@color/peach"
+                    android:textColorHint="@color/dim"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Covers sing a real song in this channel's own sound. They need Learn from real songs switched on, on the web page."
+            android:textColor="@color/dim"
+            android:textSize="11sp" />
+    </LinearLayout>
+</ScrollView>

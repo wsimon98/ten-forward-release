@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Ten Forward">
+<title>Ten Forward</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/icon-192.png">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div class="rail">
+  <div class="cap">TEN FWD</div>
+  <button class="nav" data-mode="create" style="background:var(--orange)">Create</button>
+  <button class="nav" data-mode="dial" style="background:var(--teal)">Dial</button>
+  <button class="nav" data-mode="channels" style="background:var(--green)">Channels</button>
+  <button class="nav" data-mode="library" style="background:var(--lav)">Library</button>
+  <button class="nav" data-mode="queue" style="background:var(--gold)">Queue</button>
+  <button class="nav" data-mode="settings" style="background:var(--dim)">Settings</button>
+  <div class="foot"><span class="stardate" id="stardate">SD 0000.0</span>DECK 10 · LOUNGE</div>
+</div>
+
+<main>
+  <header class="deckhead">
+    <h1>TEN FORWARD<small id="tagline">MUSIC LOUNGE · DECK 10</small></h1>
+    <div class="stat">
+      <button class="power on" id="btn-power" title="GPU power: ON reclaims the graphics card for music, OFF releases it for other apps">⏻ POWER</button>
+      <span class="chip" id="chip-engine">ENGINE</span>
+      <button class="chip chipbtn" id="chip-queue" title="Open the queue (the radio keeps playing)">QUEUE 0</button>
+      <button class="chip chipbtn hidden" id="chip-user" title="Who is listening (opens Settings)">ADMIN</button>
+      <span class="chip b" id="chip-songs">0 SONGS</span>
+    </div>
+  </header>
+  <div class="scanline"><i></i></div>
+
+  <!-- a channel being filled for the first time; shown on every tab, because it matters wherever you are -->
+  <div class="building hidden" id="building"></div>
+
+  <div class="work">
+    <!-- ================= CREATE ================= -->
+    <section class="mode on" id="mode-create">
+      <div class="col main-col">
+        <div class="seg" id="seg-mode">
+          <button class="seg-btn on" data-ui="easy">Easy</button>
+          <button class="seg-btn" data-ui="studio">Studio</button>
+        </div>
+
+        <div class="block">
+          <div class="block-head"><span class="lbl">Lyrics</span>
+            <div class="tools">
+              <button class="mini" id="btn-write">Write for me</button>
+              <button class="mini" id="btn-cover" title="Sing a real song">Cover</button>
+              <button class="mini" id="btn-upload" title="Upload a recording or a sheet: its tune is read once, then sing it again or put new words on it">Upload a song</button>
+              <button class="mini voice-only" id="btn-swap" title="A real recording, its music kept, one of our voices singing it">Swap the singer</button>
+              <button class="mini" id="btn-improve" title="Rewrite the lyrics in the box">Improve</button>
+              <button class="mini toggle" id="btn-instrumental">Instrumental</button>
+              <button class="mini ghost" id="btn-clear-lyrics">Clear</button>
+            </div>
+          </div>
+          <div class="writer hidden" id="writer">
+            <input id="write-topic" placeholder="What is the song about? (a place, a person, a night, a fight)">
+            <input id="write-mood" placeholder="Mood in your words (worn out, hopeful, cocky, tender)">
+            <div class="row">
+              <select id="write-length"><option value="short">Short</option><option value="standard" selected>Standard</option><option value="long">Long</option></select>
+              <button class="mini" id="btn-write-go">Write</button>
+              <button class="mini ghost" id="btn-write-close">Close</button>
+            </div>
+          </div>
+          <div class="writer hidden" id="coverer">
+            <input id="cover-q" placeholder="A real song to sing: an artist, a title, or an artist and a word from the title">
+            <div class="row">
+              <button class="mini" id="btn-cover-go">Find it</button>
+              <select id="cover-station"></select>
+              <label class="check" title="The real chorus stays word for word and new verses are written around it: under the channel's rules when you pick one (you read the words first, then Begin), the writer's own when you don't"><input type="checkbox" id="cover-interp"> keep only the chorus, write new verses</label>
+              <button class="mini ghost" id="btn-cover-close">Close</button>
+            </div>
+            <div id="cover-out" class="hint">Covers need "Learn from real songs" switched on in Settings.</div>
+          </div>
+          <div class="writer hidden voice-only" id="swapper">
+            <div class="hint">A real recording, its music kept, one of our voices singing it. The AI singer is YuE2's own voice, lifted from its own songs, male or female to match the original; at 0% nothing of your recording reaches the model. Pick <i>AI singer</i> in the voice list to use it outright. For any other singer, right-click a song in the Library and <b>Make a voice from this singer</b>.</div>
+          <div class="row wrap">
+            <label class="filebtn">Pick the song<input type="file" id="swap-file" accept="audio/*,video/*"></label>
+            <select id="swap-voice"><option value="">Which voice…</option></select>
+            <select id="swap-blend" title="Trained voices only. Your trained voice against the AI singer it was trained from; the original singer is gone either way."><option value="1">100% mine</option><option value="0.75">75% mine · 25% AI singer</option><option value="0.5">50 / 50</option><option value="0.25">25% mine · 75% AI singer</option><option value="0">0% mine: the AI singer, nothing of my recording</option></select>
+            <select id="swap-pitch" title="Where the melody sits for the voice"><option value="auto">pitch: auto, whole octaves into the voice's range</option><option value="song">pitch: as the song is sung</option><option value="down">pitch: one octave down</option><option value="up">pitch: one octave up</option></select>
+            <button class="mini" id="btn-swap-go" disabled>Swap it</button>
+            <button class="mini ghost" id="btn-swap-close">Close</button>
+          </div>
+          <div class="hint" id="swap-info">The vocal is lifted out, sung again in that voice and mixed back over the original music; the original singer is gone either way. The % is your trained voice against the AI singer it was trained from: less of you is the AI's steadier delivery with your timbre pulled in. Pitch "auto" moves the melody by whole octaves into the voice's range so the key stays with the band; "as the song is sung" leaves it where the original sits. The take lands in My Songs next to the song, with the new vocal alone under "vocals". For a song already in the Library: open it and use Re-voice.</div>
+          </div>
+          <textarea id="lyrics" rows="9" placeholder="[Verse 1]&#10;Write your lines here, or leave empty and hit Write for me.&#10;&#10;[Chorus]&#10;Section tags on their own lines."></textarea>
+        </div>
+
+        <div class="block">
+          <div class="block-head"><span class="lbl">Music style</span>
+            <div class="tools"><button class="mini" id="btn-style-suggest">Suggest</button></div>
+          </div>
+          <textarea id="style" rows="2" placeholder="Language, genre, vocal character, instruments, tempo. Example: English, country rock, warm male baritone, acoustic guitar, pedal steel, bass, drums, 92 BPM"></textarea>
+          <div class="chips scroll" id="style-presets"></div>
+        </div>
+
+        <div class="block voice-block voice-only">
+          <div class="block-head"><span class="lbl">Voice</span><span class="hint">Sing anything for 30 s once, use it forever</span></div>
+          <div class="row wrap">
+            <button class="voice-btn" id="btn-voice"><span class="vb-ico">◉</span><span id="voice-name">YuE2's own singer</span><span class="vb-caret">▾</span></button>
+            <button class="mini ghost" id="btn-voice-clear">No voice</button>
+          </div>
+        </div>
+
+        <!-- Studio only -->
+        <div class="studio-only">
+          <div class="block">
+            <div class="block-head"><span class="lbl">Composition planning</span></div>
+            <div class="chips" id="mode-chips">
+              <button class="chip-btn on" data-v="0">Melody and chords</button>
+              <button class="chip-btn" data-v="1">Melody only</button>
+              <button class="chip-btn" data-v="2">Direct</button>
+            </div>
+            <div class="grid2">
+              <label>Max duration <output id="out-duration">240</output>s<input type="range" id="duration" min="30" max="600" step="5" value="240"></label>
+              <label>Steps <output id="out-steps">32</output><input type="range" id="steps" min="8" max="64" step="1" value="32"></label>
+              <label>Guidance <output id="out-cfg">1.0</output><input type="range" id="cfg" min="1" max="2" step="0.05" value="1"></label>
+              <label>Temperature <output id="out-temp">1.0</output><input type="range" id="temperature" min="0.5" max="1.5" step="0.05" value="1"></label>
+              <label>Top-k <output id="out-topk">100</output><input type="range" id="top_k" min="10" max="100" step="5" value="100"></label>
+              <label>Top-p <output id="out-topp">0.95</output><input type="range" id="top_p" min="0.5" max="1" step="0.01" value="0.95"></label>
+              <label>Seed <input type="number" id="seed" value="-1" title="-1 = random"></label>
+              <label>Variations <input type="number" id="count" value="1" min="1" max="4"></label>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-head"><span class="lbl">Cover a song</span><span class="hint">SheetSage2 reads the melody, YuE2 sings it new</span></div>
+            <div class="row wrap">
+              <label class="filebtn">Upload source song<input type="file" id="cover-file" accept="audio/*,video/*"></label>
+              <button class="mini" id="btn-cover-transcribe" disabled>Transcribe its lyrics</button>
+              <button class="mini ghost" id="btn-cover-clear" disabled>Remove source</button>
+            </div>
+            <div class="hint" id="cover-info">No source song. Melody only planning is recommended for covers.</div>
+          </div>
+
+          <div class="block">
+            <div class="block-head"><span class="lbl">ABC score (optional)</span>
+              <div class="tools"><label class="filebtn mini">Load .abc<input type="file" id="abc-file" accept=".abc,text/plain"></label><button class="mini ghost" id="btn-abc-clear">Clear</button></div>
+            </div>
+            <textarea id="abc" rows="4" placeholder="Paste an ABC score (Vocal and Ins voices). Ignored when a source song is set."></textarea>
+          </div>
+
+          <div class="block" id="rewrite-block">
+            <div class="block-head"><span class="lbl">New words on a real tune</span><span class="hint">Read a song's sheet once, then sing anything to it</span></div>
+            <div class="row wrap">
+              <label class="filebtn">Read a recording or a sheet<input type="file" id="arr-file" accept="audio/*,video/*,.abc,.mid,.midi,.musicxml,.xml,.mxl,.pdf,.png,.jpg,.jpeg"></label>
+              <select id="arr-list"><option value="">Saved sheets…</option></select>
+              <button class="mini ghost" id="btn-arr-delete" disabled>Forget</button>
+            </div>
+            <div class="hint" id="arr-info">No sheet loaded. Upload a recording (SheetSage2 reads its melody, Whisper hears its words), a .mid / .musicxml / .abc file, or press Rewrite this on a Library song.</div>
+            <div id="arr-sections" class="kv hidden"></div>
+            <div class="row wrap">
+              <select id="arr-station"><option value="">the writer's own rules</option></select>
+              <input id="arr-topic" placeholder="What should the new words be about? (blank: the writer picks)">
+            </div>
+            <div class="row wrap">
+              <button class="mini" id="btn-arr-write" disabled>Write new words</button>
+              <button class="mini ghost" id="btn-arr-original" disabled>Original words</button>
+              <button class="mini ghost" id="btn-arr-fit" disabled>Check the fit</button>
+              <label class="check" title="Channels with a rewrite share (Channels editor) may sing their own words to this tune"><input type="checkbox" id="arr-radio"> channels may sing this tune</label>
+            </div>
+            <div class="hint" id="arr-fit"></div>
+            <div class="row wrap">
+              <button class="mini" id="btn-arr-sing" disabled>Sing it</button>
+              <span class="hint">Sings the Lyrics box in the Music style above (or the channel's own sound), with the planning chosen up top. The sheet goes with the job; nothing is read again.</span>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-head"><span class="lbl">LoRAs</span><span class="hint">Applied for this song only</span></div>
+            <div id="lora-list" class="lora-list"></div>
+          </div>
+        </div>
+
+        <div class="go-row">
+          <button class="go" id="btn-go">Make it so</button>
+          <span class="hint" id="go-hint"></span>
+        </div>
+      </div>
+
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Jobs</span><div class="tools"><button class="mini ghost" id="btn-jobs-clear">Clear done</button></div></div>
+          <div id="jobs" class="jobs"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Fresh from the replicator</span></div>
+          <div id="recent" class="songlist compact"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIAL ================= -->
+    <section class="mode" id="mode-dial">
+      <div class="col main-col">
+        <div class="block dial-block">
+          <div class="block-head"><span class="lbl">Dial</span><span class="hint">Slide, swipe or use the arrows. Big buttons for the car. Channels have their own tab.</span></div>
+          <div id="dial-face" class="dial-face">
+            <div class="dial-name" id="dial-name">Tune in</div>
+            <div class="dial-row"><button class="dial-arrow" id="dial-prev" title="Previous station">‹</button><input type="range" id="dial-range" min="0" max="0" value="0" step="1" aria-label="Station dial"><button class="dial-arrow" id="dial-next" title="Next station">›</button></div>
+            <div class="dial-ticks" id="dial-ticks"></div>
+          </div>
+          <div class="dial-ctl"><button class="big" id="dial-play" title="Play / pause">▶</button><button class="big lav" id="dial-skip" title="Next song">⏭</button><button class="big pink" id="dial-like" title="Heart">♡</button><button class="big teal songs" id="dial-songs" title="Pick a song off this channel">SONGS</button></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Now playing</span></div>
+          <div id="now" class="now"><div class="hint">Tune in to a station to start the radio.</div></div>
+          <div id="next-up" class="nextup hidden"></div>
+        </div>
+      </div>
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Lyrics</span></div>
+          <pre id="now-lyrics" class="lyrics-view"></pre>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Recently played</span></div>
+          <div id="history" class="songlist compact"><div class="hint">Nothing played yet.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHANNELS ================= -->
+    <section class="mode" id="mode-channels">
+      <div class="col main-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Channels</span>
+            <div class="tools"><span id="buffer-line" class="buffer" title="How much fresh audio the radio is holding across every channel. The card makes songs faster than they play, so this should grow while nobody is listening."></span><button class="mini toggle on" id="btn-autofill" title="Keep stations stocked with new songs">Auto stock</button><button class="mini" id="btn-quick-station" title="Describe a channel in your own words and let it build one">Quick create</button><button class="mini" id="btn-new-station">New channel</button></div>
+          </div>
+          <div id="stations" class="stations"></div>
+        </div>
+        <div class="block hidden" id="quick-create">
+          <div class="block-head"><span class="lbl">Quick create</span><div class="tools"><button class="mini ghost" id="qc-close">Close</button></div></div>
+          <div class="hint">Say what the channel is in your own words. Name acts or songs you want it to sit next to — it writes the sound, what it sings about, its mood and its colour, and shows you the lot before anything is saved.</div>
+          <label><textarea id="qc-text" rows="4" placeholder="90s alt rock for driving at night, loud quiet loud, a bit angry. Nirvana, Bush, Foo Fighters."></textarea></label>
+          <div class="grid2">
+            <label class="check"><input type="checkbox" id="qc-inst"> Instrumental channel: no singing at all</label>
+            <label class="check"><input type="checkbox" id="qc-explicit"> Swearing allowed in the lyrics</label>
+            <label id="qc-cover-wrap">Covers (% of songs that sing a real song instead of writing one)<input type="number" id="qc-cover" min="0" max="100" step="5" value="0"></label>
+            <label>Song length (minutes, blank = the usual)<input type="number" id="qc-mins" min="1" max="10" step="0.5" placeholder="default"></label>
+          </div>
+          <div class="tools"><button class="mini" id="qc-go">Build it</button><button class="mini ghost hidden" id="qc-again">Try again</button><span class="hint" id="qc-out"></span></div>
+          <div class="hint">Nothing is saved until you press Save on the channel below.</div>
+        </div>
+        <div class="block hidden" id="station-editor">
+          <div class="block-head"><span class="lbl" id="se-title">Station</span><div class="tools"><button class="mini ghost" id="se-close">Close</button></div></div>
+          <div class="hint hidden" id="se-note"></div>
+          <div class="hint hidden" id="se-fav-note">Favorites holds every song you put a heart on, wherever it lives. It never writes songs of its own, so it has no sound, no themes and no stock to keep ahead — heart a song on any channel and it turns up here, take the heart off and it leaves. The song keeps playing on its own channel either way.</div>
+          <div class="grid2">
+            <label>Name<input id="se-name"></label>
+            <label>Lyrics folder<input id="se-folder" placeholder="folder name under lyrics/"></label>
+            <label>Duration (s)<input type="number" id="se-duration" value="180" min="30" max="600"></label>
+            <label>Keep ahead<input type="number" id="se-keep" value="2" min="0" max="6"></label>
+            <label>Lyric source<select id="se-policy"><option value="mixed">Folder files and invented</option><option value="files">Folder files only</option><option value="invent">Invented by the LLM</option></select></label>
+            <label class="voice-only">Voice<select id="se-voice"></select></label>
+            <label>Planning<select id="se-mode"><option value="0">Melody and chords</option><option value="1">Melody only</option><option value="2">Direct</option></select></label>
+            <label title="How hard the engine works on the sound. The last stage of a render is directly proportional to this, so 24 takes about a quarter less time than 32. Blank uses the setting in Settings. Every song ever made here used 32, so change one channel and listen before changing them all.">Effort (steps)<input type="number" id="se-steps" placeholder="default" min="4" max="64"></label>
+            <label class="check"><input type="checkbox" id="se-instrumental"> Instrumental station</label>
+            <label class="check"><input type="checkbox" id="se-auto" checked> Auto generate</label>
+            <label>Replay<select id="se-replay"><option value="fresh">Fresh songs first, never repeat the last five</option><option value="loop">Loop what exists</option></select></label>
+            <label>Sound set (instrumental channels mutate with it every song; sung channels cross their style with it about half the time)<select id="se-fusion"><option value="">Auto from the description</option></select></label>
+            <label class="check"><input type="checkbox" id="se-variation" checked> Vary the style from song to song (mutate / cross with the sound set)</label>
+            <label>Keep songs for (days, 0 = never delete, blank = default)<input type="number" id="se-retention" min="0" max="3650" step="1" placeholder="default"></label>
+            <label>Instrumental tracks (% of songs, for stations with lyrics)<input type="number" id="se-instchance" min="0" max="100" step="5" value="0"></label>
+            <label>Male voices (% of sung songs; blank = whatever the style lines say)<input type="number" id="se-male" min="0" max="100" step="5" placeholder="from the style lines"></label>
+            <label>Local place names (% of songs that name one of your places from personal.json; blank = 12)<input type="number" id="se-place" min="0" max="100" step="1" placeholder="12"></label>
+            <label>Covers (% of songs that sing a real song instead of writing one; blank = whatever Settings says)<input type="number" id="se-cover" min="0" max="100" step="5" placeholder="off"></label>
+            <label title="Only sheets ticked 'channels may sing this tune' in Studio are used">Rewrites (% of songs that sing this channel's own words to a saved tune; blank = never)<input type="number" id="se-rewrite" min="0" max="100" step="5" placeholder="off"></label>
+          </div>
+          <div class="mobile-only">
+            <label>Themes the songs are about (comma list of theme ids or groups love / summer / money / scene / street; blank = all) <textarea id="se-themes" rows="2"></textarea></label>
+            <div class="hint" id="se-theme-hint"></div>
+          </div>
+          <div class="desktop-only theme-panel" id="se-theme-panel">
+            <div class="block-head"><span class="lbl">Themes and mood</span><span class="hint" id="se-theme-count"></span><div class="tools"><button class="mini" id="se-theme-new" title="Add a theme of your own to the catalog (every station can use it)">New theme</button></div></div>
+            <div class="grid2">
+              <label>Mood (an attitude the writer keeps for every song on this station)<input id="se-mood" placeholder="e.g. cold, confident, unbothered; or warm and unhurried"></label>
+              <label class="check" style="align-self:end"><input type="checkbox" id="se-explicit"> Explicit: cussing, violence and death allowed in the lyrics</label>
+            </div>
+            <div class="hint">Tick what this station sings about. Nothing ticked = every theme. Ticking a group takes the whole group. Hover a theme to read its brief; Edit changes what songs on that theme are about, for every station that uses it.</div>
+            <div id="se-theme-list" class="theme-list"></div>
+            <div class="theme-edit hidden" id="theme-edit">
+              <div class="block-head"><span class="lbl" id="te-title">Theme</span><div class="tools"><button class="mini ghost" id="te-close">Close</button></div></div>
+              <div class="grid2">
+                <label>Name<input id="te-name" placeholder="e.g. Corner store"></label>
+                <label>Group<select id="te-kind"></select></label>
+                <label>Weight (1 = rare, 20 = often)<input type="number" id="te-weight" min="1" max="20" value="5"></label>
+              </div>
+              <label>What songs on this theme are about. Write {Singer} {partner} {they} {them} {their} and the writer fits the words to the singer<textarea id="te-brief" rows="3" placeholder="{Singer} ... a specific scene, a person, a place, a small event, a detail or two."></textarea></label>
+              <div class="row wrap"><button class="go small" id="te-save">Save theme</button><button class="mini ghost danger" id="te-delete">Delete</button><button class="mini ghost" id="te-hide" title="Take a built-in theme out of every station's pool until you reset it">Hide everywhere</button></div>
+            </div>
+          </div>
+          <label>Extra banned topics (politics and sports are always banned; add religion, drugs, alcohol, profanity, death)<input id="se-banned" placeholder="e.g. alcohol, death"></label>
+          <label>Description (the LLM invents songs from this)<textarea id="se-desc" rows="2"></textarea></label>
+          <label>Style prompts, one per line (picked at random)<textarea id="se-styles" rows="3"></textarea></label>
+          <div class="row"><button class="go small" id="se-save">Save station</button><button class="mini ghost danger" id="se-delete">Delete</button></div>
+        </div>
+      </div>
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">On the air</span><div class="tools"><button class="mini" id="ch-open-dial">Open the dial</button></div></div>
+          <div id="ch-now" class="now"><div class="hint">Nothing playing. Tune in to a channel.</div></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">How channels work</span></div>
+          <div class="hint" style="line-height:1.5">A channel is a sound (its style lines, picked at random and, when it has a sound set, crossed with it about half the time) plus the themes its songs are about. <b>Tune in</b> plays it here; the <b>Dial</b> tab is the big-button version for the car. <b>Make one</b> cooks a song right now, <b>Edit</b> changes the sound, the themes, the mood and the bans (type a theme of your own into the list and it becomes one). <b>Auto stock</b> keeps five unplayed songs ready on every channel.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUEUE ================= -->
+    <section class="mode" id="mode-queue">
+      <div class="col main-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Making now</span>
+            <div class="tools"><button class="mini toggle" id="q-pause" title="Finish the current song, then hold everything">Pause queue</button><button class="mini toggle on" id="q-autofill" title="Let the stations restock themselves">Auto stock</button></div>
+          </div>
+          <div id="q-now" class="qnow"><div class="hint">Nothing is being made.</div></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Up next</span><span class="hint" id="q-count"></span></div>
+          <div id="q-list" class="jobs"><div class="hint">Queue is empty.</div></div>
+        </div>
+      </div>
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Just finished</span><div class="tools"><button class="mini ghost" id="q-clear">Clear</button></div></div>
+          <div id="q-recent" class="jobs"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">How the line works</span></div>
+          <div class="hint" style="line-height:1.5">One song renders at a time, about three minutes each. Your own songs (Create, Make one, re-voice) go ahead of the radio's automatic restocking. Every station keeps five unplayed songs ready; the station being listened to is restocked first. Cancel removes a song from the line; cancelling the one being made starts the next one. Opening this tab never interrupts playback.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIBRARY ================= -->
+    <section class="mode" id="mode-library">
+      <div class="col main-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Library</span>
+            <div class="tools">
+              <input id="lib-search" placeholder="Search title, lyrics, style">
+              <button class="mini toggle" id="lib-liked">Liked</button>
+            </div>
+          </div>
+          <div id="library" class="songlist"></div>
+        </div>
+      </div>
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Selected</span></div>
+          <div id="lib-detail" class="detail"><div class="hint">Tap a song.</div></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Import your songs</span><span class="hint">Finished tracks (mp3, wav, m4a). Kept forever.</span></div>
+          <div class="row wrap">
+            <label class="filebtn">Pick audio files<input type="file" id="imp-files" accept="audio/*,.m4a,.mp3,.wav,.flac" multiple></label>
+            <select id="imp-station" title="Station they play on"></select>
+          </div>
+          <div class="row wrap" style="margin-top:8px"><input id="imp-path" placeholder="or a folder this computer can see: E:\Music"><button class="mini" id="imp-scan">Import folder</button></div>
+          <div class="hint" id="imp-progress" style="margin-top:6px"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Lyric files</span><div class="tools"><button class="mini ghost" id="lf-refresh">Refresh</button></div></div>
+          <div class="row wrap"><select id="lf-folder"></select><input id="lf-search" placeholder="Find a title"></div>
+          <div id="lf-list" class="list" style="margin-top:8px;max-height:44vh;overflow:auto"></div>
+          <div id="lf-detail" class="detail" style="margin-top:8px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SETTINGS ================= -->
+    <section class="mode" id="mode-settings">
+      <div class="col main-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Settings</span><span class="hint" id="set-who"></span><div class="tools"><button class="mini ghost" id="set-reload">Reload</button></div></div>
+          <div id="set-groups"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Who is listening</span><span class="hint">One person called admin, no password, never asked. Add anybody else here.</span></div>
+          <div id="set-users" class="list"></div>
+          <div class="row wrap" id="set-adduser" style="margin-top:8px">
+            <input id="su-name" placeholder="Name" maxlength="32" style="max-width:160px">
+            <input id="su-pass" type="password" placeholder="Password (optional)" autocomplete="new-password" style="max-width:190px">
+            <select id="su-role" style="max-width:130px"><option value="user">Listener</option><option value="admin">Admin</option></select>
+            <button class="mini" id="su-add">Add person</button>
+          </div>
+          <div class="row wrap" style="margin-top:8px"><button class="mini ghost" id="su-mypass">Change my password</button><button class="mini ghost" id="su-signout">Sign out</button></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Lyrics folders</span><span class="hint">Drop .txt or .md files in the lyrics folder of this app</span></div>
+          <div id="sys-lyrics" class="list"></div>
+        </div>
+      </div>
+      <div class="col side-col">
+        <div class="block">
+          <div class="block-head"><span class="lbl">Engine</span><div class="tools"><button class="mini" id="btn-unload">Release GPU</button></div></div>
+          <div id="sys-engine" class="kv"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Lyric writer</span><div class="tools"><button class="mini ghost" id="btn-llm-test">Test</button></div></div>
+          <div id="sys-llm" class="kv"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">The phone app</span></div>
+          <div id="set-app" class="list"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Problems</span><div class="tools"><button class="mini ghost" id="btn-problems-refresh">Refresh</button></div></div>
+          <div id="set-problems" class="list"></div>
+        </div>
+        <div class="block voice-only">
+          <div class="block-head"><span class="lbl">Voices</span></div>
+          <div id="sys-voices" class="list"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">LoRAs installed</span></div>
+          <div id="sys-loras" class="list"></div>
+        </div>
+        <div class="block">
+          <div class="block-head"><span class="lbl">Links</span></div>
+          <div class="list" id="set-links">
+            <a class="board" href="https://huggingface.co/m-a-p/YuE2-3B" target="_blank" rel="noreferrer">YUE2 MODEL CARD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= PLAYER ================= -->
+  <div class="player" id="player">
+    <audio id="audio" preload="auto"></audio>
+    <div class="p-info">
+      <div class="p-title" id="p-title">Nothing playing</div>
+      <div class="p-sub" id="p-sub">Ten Forward is quiet</div>
+    </div>
+    <div class="p-ctl">
+      <button class="pbtn" id="p-play">▶</button>
+      <button class="pbtn" id="p-next" title="Next">⏭</button>
+      <button class="pbtn" id="p-like" title="Like">♡</button>
+      <button class="pbtn queue" id="p-queue" title="Up next">≡<span class="qn" id="p-queue-n"></span></button>
+      <button class="pbtn sleep" id="p-sleep" title="Sleep timer">⏾</button>
+    </div>
+    <div class="sheet hidden" id="songsheet">
+      <div class="sheet-top">
+        <div class="sheet-ttl"><b id="ss-name">Songs</b><span id="ss-count"></span></div>
+        <button class="sheet-x" id="ss-close" title="Close">✕</button>
+      </div>
+      <div class="sheet-tools">
+        <input id="ss-q" type="search" placeholder="Search these songs" autocomplete="off">
+        <button class="mini ghost" id="ss-liked" title="Only the hearted ones">♥</button>
+      </div>
+      <p class="sheet-hint">Tap a song to play it now · hold it to line it up</p>
+      <div id="ss-list" class="sheet-list"></div>
+      <div class="sheet-foot">
+        <span id="ss-qn" class="sheet-qn"></span>
+        <button class="mini ghost" id="ss-clear">Clear the line</button>
+      </div>
+    </div>
+    <div class="sleep-menu qmenu hidden" id="queue-menu">
+      <div class="qhead">UP NEXT<button class="mini ghost" id="q-clear-next">Clear</button></div>
+      <div id="up-next"></div>
+    </div>
+    <div class="ctx hidden" id="song-menu" role="menu"></div>
+    <div class="sleep-menu hidden" id="sleep-menu">
+      <button data-sleep="song">Stop after this song</button>
+      <button data-sleep="15">15 minutes</button>
+      <button data-sleep="30">30 minutes</button>
+      <button data-sleep="60">1 hour</button>
+      <button data-sleep="off">Off</button>
+    </div>
+    <div class="p-seek"><input type="range" id="p-seek" min="0" max="1000" value="0"><span id="p-time">0:00</span></div>
+  </div>
+</main>
+
+<!-- ================= VOICE SHEET ================= -->
+<div class="sheet pop hidden" id="voice-sheet">
+  <div class="sheet-card" id="voice-card">
+    <div class="sheet-head"><span class="lbl">Voice</span><button class="mini ghost" id="vs-close">Close</button></div>
+    <div class="seg small" id="vs-tabs">
+      <button class="seg-btn on" data-tab="pick">Pick</button>
+      <button class="seg-btn" data-tab="record">Record</button>
+      <button class="seg-btn" data-tab="upload">Upload</button>
+    </div>
+    <div class="vs-tab on" id="vs-pick"><div id="vs-list" class="list"></div><audio id="vs-audio" preload="none"></audio><div class="row wrap" style="margin-top:8px"><button class="mini ghost" id="btn-ai-singers" title="One male, one female: YuE2's own voice lifted from two of the radio's songs. What a 0% swap sings from.">Make the AI singers</button></div></div>
+    <div class="vs-tab" id="vs-record">
+      <p class="hint">Sing or talk for 20 to 40 seconds. Anything works, it does not need to be the song. Quiet room, no music behind you.</p>
+      <div class="rec-row"><button class="rec" id="rec-btn">● Record</button><span class="rec-time" id="rec-time">0:00</span></div>
+      <div class="hidden" id="rec-insecure">
+        <p class="hint">The microphone only works on a secure page and this one is plain http, so the browser hides it. Two ways around it:</p>
+        <div class="row wrap"><a class="mini" id="rec-https" href="#">Open the https link (same page)</a><label class="filebtn">Record with the phone's recorder<input type="file" id="rec-capture" accept="audio/*" capture></label></div>
+        <p class="hint">Desktop over http: in Brave or Chrome open chrome://flags/#unsafely-treat-insecure-origin-as-secure, add this address, relaunch.</p>
+      </div>
+      <audio id="rec-preview" controls class="hidden"></audio>
+      <div class="row wrap"><input id="rec-name" placeholder="Name this voice"><button class="mini" id="rec-save" disabled>Save voice</button></div>
+      <p class="hint" id="rec-hint"></p>
+    </div>
+    <div class="vs-tab" id="vs-upload">
+      <p class="hint">Upload a recording of someone singing or talking. If there is music behind them, tick remove music and the vocals get pulled out first.</p>
+      <label class="filebtn">Choose audio file<input type="file" id="vu-file" accept="audio/*,video/*"></label>
+      <div class="hint" id="vu-info"></div>
+      <label class="check"><input type="checkbox" id="vu-remove" checked> Remove music from this file</label>
+      <div class="row wrap"><input id="vu-name" placeholder="Name this voice"><button class="mini" id="vu-save" disabled>Save voice</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WHO IS LISTENING ================= -->
+<div class="sheet hidden" id="login-sheet">
+  <div class="sheet-card">
+    <div class="sheet-head"><span class="lbl">Who is listening?</span></div>
+    <div id="login-list" class="row wrap"></div>
+    <div class="hidden" id="login-pw-row">
+      <label>Password for <b id="login-who"></b><input type="password" id="login-pw" autocomplete="current-password"></label>
+      <div class="row wrap" style="margin-top:8px"><button class="go small" id="login-go">Sign in</button><button class="mini ghost" id="login-back">Back</button></div>
+    </div>
+    <p class="hint" id="login-msg">Pick a name. Whoever set this up can add people in Settings.</p>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

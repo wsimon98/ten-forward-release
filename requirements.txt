@@ -1,0 +1,7 @@
+# Ten Forward's own dependencies. Everything else it needs (torch, transformers, the YuE2 stack)
+# comes from the Wan2GP tree in wan2gp/requirements.txt, which is installed first.
+fastapi>=0.115
+uvicorn>=0.30
+python-multipart>=0.0.9
+soundfile>=0.12
+scipy>=1.11

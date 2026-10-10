@@ -1,0 +1,741 @@
+{
+ "core": [
+  {
+   "id": "core-sections",
+   "title": "Section lengths are hard limits",
+   "text": "Verse 4-8 lines, each adding new information. Pre-chorus 2-4. Chorus 4-8; four is often perfect. Bridge 4-8, one new angle. Over the limit? Cut or merge, never add."
+  },
+  {
+   "id": "core-hook",
+   "title": "The chorus is the hook",
+   "text": "The chorus carries the title, sung at least twice, in the simplest words and shortest lines. It states the plain truth the verses circle. Repeat it word for word."
+  },
+  {
+   "id": "core-show",
+   "title": "Show, do not tell",
+   "text": "Name the truck, the town, the year, the smell of the kitchen. Give evidence of the feeling and let the listener name it; never write the emotion word."
+  },
+  {
+   "id": "core-rhyme",
+   "title": "Rhyme rules",
+   "text": "Slant rhyme is the default (stone/hope, love/enough); perfect rhyme only when it falls naturally. Never twist meaning to land a rhyme. Vary the scheme by section: ABCB verses, AABB or ABAB chorus. Internal rhyme one or two per verse, more only in rap. Skip fire/desire, love/above, heart/apart."
+  },
+  {
+   "id": "core-arc",
+   "title": "Arc across the song",
+   "text": "Verse 1 sets the scene. Chorus states the truth. Verse 2 moves time forward or raises the cost. Bridge changes the angle: a question, a confession, a twist. Final chorus lands harder. One point of view, one tense."
+  },
+  {
+   "id": "core-format",
+   "title": "Formatting the lyric sheet",
+   "text": "Label sections: [Verse 1], [Chorus], [Bridge]. Performance cues in brackets: [Beat builds], [Drop to acoustic]. Background vocals in parentheses: (ooh), (echo last phrase). Ad-libs only where a singer would naturally add one."
+  },
+  {
+   "id": "core-voice",
+   "title": "Voice",
+   "text": "Raw and direct: plain words a real person would say. Strong verbs, few adjectives. Read aloud; if the mouth trips, rewrite."
+  }
+ ],
+ "cards": [
+  {
+   "id": "structure-verse-chorus",
+   "tags": [
+    "structure",
+    "verse",
+    "chorus",
+    "bridge",
+    "pacing"
+   ],
+   "title": "Verse-chorus blueprint",
+   "text": "Default map: Intro (0-2 lines or a cue), Verse 1 (4-8), Pre-chorus (2-4, optional), Chorus (4-8), Verse 2 (4-8), Pre-chorus, Chorus, Bridge (4-8), Chorus, Outro (hook repeat and fade). Write the target line count beside each label before drafting and treat it as a wall. Twelve verse lines means two verses or an edit."
+  },
+  {
+   "id": "structure-aaba",
+   "tags": [
+    "structure",
+    "folk",
+    "jazz",
+    "blues",
+    "verse"
+   ],
+   "title": "AABA and verse-refrain forms",
+   "text": "For folk ballads, jazz standards, blues and story songs there is no separate chorus. Three verses (A) share a shape and a closing refrain line; the B section changes melody and angle, then a final A lands the ending. Keep the refrain identical each time so it works as the hook. Blues uses AAB: state a line, repeat it, answer with the rhyming punchline."
+  },
+  {
+   "id": "intro",
+   "tags": [
+    "intro",
+    "vocal-cues",
+    "backing-vocals"
+   ],
+   "title": "Intro",
+   "text": "Set the mood fast: an instrumental cue in brackets, a breathy (ooh), a spoken line, or one fragment of the hook. Two lines maximum. An intro that lingers loses the listener before the first verse."
+  },
+  {
+   "id": "prechorus",
+   "tags": [
+    "prechorus",
+    "structure",
+    "dynamics"
+   ],
+   "title": "Pre-chorus",
+   "text": "Two to four lines that ramp toward the chorus. Shorten the lines, repeat a phrase, raise the stakes, and end on a word that hands off to the first chorus rhyme. Good spot for a rising (ooh) pad or one energetic ad-lib. It connects; it is not a second verse."
+  },
+  {
+   "id": "chorus-rules",
+   "tags": [
+    "chorus",
+    "hook",
+    "repetition"
+   ],
+   "title": "Chorus construction",
+   "text": "Open with the title or land on it in the last line. Lines of 4-6 syllables, one idea, plain words, strong stressed end rhymes (AABB, ABAB or AAAA). Same words every time it returns. Stack a harmony on the last word of each line and leave room for a gang shout or (echo of the last phrase). More than eight lines is an essay."
+  },
+  {
+   "id": "bridge",
+   "tags": [
+    "bridge",
+    "structure",
+    "rhyme"
+   ],
+   "title": "Bridge",
+   "text": "Four to eight lines that break the pattern: a question, a confession, a jump in time, the other person's point of view, or the realization that changes how the last chorus sounds. Switch the rhyme scheme (ABCC, or drop rhyme for two lines) and the dynamic: strip to acoustic or build to the peak. Then straight back into the chorus."
+  },
+  {
+   "id": "outro",
+   "tags": [
+    "outro",
+    "repetition",
+    "adlibs",
+    "backing-vocals"
+   ],
+   "title": "Outro",
+   "text": "Repeat the hook or title and fade, with (background) motifs and soft ad-libs trailing off, or add one new final line that turns the meaning. Circular trick: end on the same image the first line opened with. Never an abrupt stop unless silence is the point."
+  },
+  {
+   "id": "editing",
+   "tags": [
+    "pacing",
+    "structure",
+    "cliche"
+   ],
+   "title": "Edit like a chainsaw",
+   "text": "For every line ask: does it serve this section's job? Merge two weak lines into one strong one. Cut anything said twice. Replace adjective plus adverb with one strong verb (ran very quickly becomes sprinted). Cut the beautiful line that does not belong; save it for another song."
+  },
+  {
+   "id": "pov-tense",
+   "tags": [
+    "storytelling",
+    "verse"
+   ],
+   "title": "Point of view and tense",
+   "text": "Pick one: I (intimate), you (direct address), he/she/they (narrator). Stay there unless a duet or a bridge flip is the point, and then make the switch obvious. Verses in past tense telling the memory with a chorus in present tense feeling it now is a clean, common split."
+  },
+  {
+   "id": "process",
+   "tags": [
+    "process",
+    "structure",
+    "rhyme"
+   ],
+   "title": "Writing order",
+   "text": "1. One sentence: what this song says. 2. Title and genre. 3. Section map with line counts and rhyme schemes written down. 4. Draft each section for meaning first, counting lines as you go; stop at the limit and condense. 5. Refine rhymes toward slant, cut cliches, add [cues] and (backing) notes. 6. Read the whole thing aloud."
+  },
+  {
+   "id": "hook",
+   "tags": [
+    "hook",
+    "chorus",
+    "repetition"
+   ],
+   "title": "The hook",
+   "text": "A hook is the short phrase people hum in the parking lot: three to six words, one strong image or plain statement, usually the title. Place it first and last in the chorus; echo it in the outro. If a crowd could not shout it, simplify it."
+  },
+  {
+   "id": "title",
+   "tags": [
+    "hook",
+    "chorus",
+    "storytelling"
+   ],
+   "title": "Write to a title",
+   "text": "Choose the title first: a concrete phrase, an object, a line of dialogue, a place name. Test every line against it. The title appears in the chorus and usually gives the last line of the song. A good title already implies the story, so the verses only have to prove it."
+  },
+  {
+   "id": "rhyme-schemes",
+   "tags": [
+    "rhyme",
+    "verse",
+    "chorus"
+   ],
+   "title": "Rhyme schemes",
+   "text": "AABB: sing-song, direct, good for choruses and humor. ABAB: flowing, a little more elegant. ABCB: the ballad scheme, natural and conversational, best for story verses. AABA: two setups, a lift, then the punchline. AAAA: relentless emphasis, short bursts only. Mark the scheme beside each section before drafting."
+  },
+  {
+   "id": "slant-rhyme",
+   "tags": [
+    "slant-rhyme",
+    "rhyme"
+   ],
+   "title": "Slant rhyme is your default",
+   "text": "Consonance shares the closing consonant (slip/slap, world/cold). Assonance shares the vowel (stone/hope, light/mind, pain/shape). Both sound like talking, widen your word choices, and dodge cliches: rhyme love with enough or touch, not above. Use perfect rhyme where you want the line to snap shut."
+  },
+  {
+   "id": "perfect-rhyme",
+   "tags": [
+    "rhyme",
+    "chorus",
+    "cliche"
+   ],
+   "title": "Perfect rhyme, used on purpose",
+   "text": "Perfect rhyme (bright/night) is clear and satisfying, so it belongs in choruses and punchlines. It is also where cliches live. Banned pairs unless the context is truly fresh: fire/desire, love/above, pain/rain, heart/apart, true/you, sky/high, forever/together, night/light, dreams/seems."
+  },
+  {
+   "id": "internal-rhyme",
+   "tags": [
+    "internal-rhyme",
+    "rhyme",
+    "rap"
+   ],
+   "title": "Internal rhyme",
+   "text": "Rhyme inside the line or from mid-line to line end (once upon a midnight dreary, while I pondered weak and weary). One or two per verse adds bounce to sung lyrics; hip-hop stacks them constantly. Do not clutter a chorus with them; it needs clean end rhymes."
+  },
+  {
+   "id": "multisyllabic",
+   "tags": [
+    "rhyme",
+    "rap",
+    "hip-hop",
+    "humor"
+   ],
+   "title": "Multisyllabic rhyme",
+   "text": "Rhyme two or more syllables: passion/fashion, situation/frustration, heartbreak hotel/start to tell. Essential in rap, witty in country and theatre. Start at two syllables and climb. If the phrase sounds like it exists only for the rhyme, cut it."
+  },
+  {
+   "id": "forced-rhyme",
+   "tags": [
+    "rhyme",
+    "cliche"
+   ],
+   "title": "Never force a rhyme",
+   "text": "Get the idea down first, then find the rhyme. If you must invert word order, use a word nobody says, or change what you meant, drop the rhyme. Bending pronunciation slightly (again to rhyme with pen) is fine in country or blues; wrenching (orange/door hinge) is a joke or nothing."
+  },
+  {
+   "id": "vary-scheme",
+   "tags": [
+    "rhyme",
+    "structure",
+    "bridge"
+   ],
+   "title": "Vary the scheme",
+   "text": "One scheme for the whole song sounds like a nursery rhyme. Switch between sections (ABCB verse, AABB chorus). Close a verse with a CC couplet to underline it. Drop one unrhymed line in a rhyming section to make it stand out. Give the bridge a pattern nobody has heard yet."
+  },
+  {
+   "id": "advanced-rhyme",
+   "tags": [
+    "rhyme",
+    "rap",
+    "rock"
+   ],
+   "title": "Displaced, delayed, broken",
+   "text": "Off-centered: the end word rhymes with a word inside the next line; feels conversational. Suspended: delay the answering rhyme two lines; the landing hits harder. Broken: split a word across the line break (an- / swer) for fragmentation or humor. Post-hardcore and rap use these; pop and country rarely."
+  },
+  {
+   "id": "sound-devices",
+   "tags": [
+    "rhyme",
+    "imagery"
+   ],
+   "title": "Vowel echo, consonant crunch, alliteration",
+   "text": "Assonance: repeat a vowel through a line (slow road to snow) for smoothness. Consonance: repeat a consonant (struck a streak of bad luck) for grit. Alliteration: repeat initial sounds for emphasis, but two or three words, not six. Soft s sounds for tenderness, hard k and t for anger."
+  },
+  {
+   "id": "singability",
+   "tags": [
+    "vocal-cues",
+    "verse",
+    "chorus"
+   ],
+   "title": "Singability",
+   "text": "Important words land on strong beats; stressed syllables match where the melody will push. Avoid consonant pile-ups (strengths, twelfths) and phrases too long for one breath. Open vowels (oh, ay, ah) hold well on long notes; end chorus lines on them when possible."
+  },
+  {
+   "id": "show-dont-tell",
+   "tags": [
+    "imagery",
+    "storytelling"
+   ],
+   "title": "Show, do not tell",
+   "text": "Telling: she was sad. Showing: coffee cold on the table, the sock still under his side of the bed. Give the clue, let the listener solve it. Every verse should contain at least two objects you could photograph."
+  },
+  {
+   "id": "five-senses",
+   "tags": [
+    "imagery"
+   ],
+   "title": "Five senses",
+   "text": "Sight: colors, light, one specific object. Sound: a screen door, a siren, silence. Smell: damp wood, diesel, lavender; the strongest memory trigger. Taste: bitter coffee, cheap beer. Touch: cold steering wheel, gravel underfoot. Use two senses per verse, never a checklist of all five."
+  },
+  {
+   "id": "metaphor",
+   "tags": [
+    "metaphor",
+    "imagery"
+   ],
+   "title": "Metaphor and simile",
+   "text": "One image per section, carried through: if life is a highway, stay on the road for the whole verse; do not switch to a ship and a garden. Simile (like, as) is quicker and suits pop, country and rock. Push past the first comparison (eyes like stars) to one only this narrator would make. Match it to the tone."
+  },
+  {
+   "id": "cliche-swap",
+   "tags": [
+    "cliche",
+    "imagery"
+   ],
+   "title": "Cliche swap",
+   "text": "When you write a phrase you have heard a hundred times (broken heart, chasing dreams, light at the end of the tunnel), replace it with a specific object or action that proves the same thing: the ring in the cupholder, the resume still open at 2 a.m. Specific beats poetic."
+  },
+  {
+   "id": "symbol",
+   "tags": [
+    "imagery",
+    "metaphor",
+    "storytelling"
+   ],
+   "title": "Pick one symbol",
+   "text": "Choose one object to carry the meaning: a faded photograph, the porch light left on, a key that no longer fits. Introduce it in verse 1, return to it changed in the bridge or last chorus. Let the object do the emotional work instead of adjectives."
+  },
+  {
+   "id": "storytelling",
+   "tags": [
+    "storytelling",
+    "verse",
+    "country",
+    "folk"
+   ],
+   "title": "Tell one story",
+   "text": "One story per song: a character, a place, a want, a turn. Verse 1: where and who, in present detail. Verse 2: time passes or the cost rises. Bridge: the twist or the confession. Chorus: the truth the story keeps proving. Name things: the year, the model of the truck, the road number."
+  },
+  {
+   "id": "core-message",
+   "tags": [
+    "storytelling",
+    "hook"
+   ],
+   "title": "The so-what test",
+   "text": "Before writing, finish this sentence: this song says that ___. Breakup can mean I am destroyed, I am better off, or I miss his dog; each is a different song. Every line and image must support that one sentence. If it does not, it belongs to a different song."
+  },
+  {
+   "id": "vocal-cues",
+   "tags": [
+    "vocal-cues",
+    "dynamics"
+   ],
+   "title": "Bracketed performance cues",
+   "text": "Put production and performance directions in square brackets on their own line: [Beat builds], [Drop to acoustic guitar only], [Full band swells], [Whispered], [Gang vocals], [Half-time], [Key change], [Instrumental break], [Drums out]. One cue per section change; the singer needs direction, not a script."
+  },
+  {
+   "id": "backing-vocals",
+   "tags": [
+    "backing-vocals",
+    "chorus",
+    "vocal-cues"
+   ],
+   "title": "Background vocals",
+   "text": "Write them in parentheses at the line they hit: (ooh) pads under a pre-chorus, (echo the last phrase) after a chorus line, (gang shout) on the title, close harmony on the last word of each chorus line, a countermelody in the bridge. Verses stay mostly bare so the story is clear."
+  },
+  {
+   "id": "adlibs",
+   "tags": [
+    "adlibs",
+    "vocal-cues",
+    "hip-hop",
+    "rnb"
+   ],
+   "title": "Ad-libs",
+   "text": "Short vocal interjections at line ends or in gaps: yeah, alright, woo (energy); mmm, ohhh, a sigh (atmosphere); Lord have mercy (blues); brrr, skrrt (rap tags). Choose energy or atmosphere, keep them brief, write them in parentheses. Country and folk use almost none; rap and funk use them every bar."
+  },
+  {
+   "id": "call-response",
+   "tags": [
+    "backing-vocals",
+    "gospel",
+    "blues",
+    "chorus"
+   ],
+   "title": "Call and response",
+   "text": "Lead sings the call; parentheses hold the answer: Can we make it through the night? (Through the night!). Answers can echo, affirm (That's right!), or argue. Foundational in gospel, blues, funk and work songs; in post-hardcore the clean voice answers the scream. Great for the second half of a chorus."
+  },
+  {
+   "id": "dynamics",
+   "tags": [
+    "dynamics",
+    "vocal-cues",
+    "rock",
+    "pop"
+   ],
+   "title": "Dynamics",
+   "text": "Contrast sells the chorus: quiet, sparse verse into a full, loud chorus; or full verse into a stripped chorus for surprise. Mark it: [Drums drop out] before the bridge, [Everything in] on the last chorus. A song at one volume is wallpaper."
+  },
+  {
+   "id": "hip-hop",
+   "tags": [
+    "hip-hop",
+    "rap",
+    "rhyme",
+    "internal-rhyme"
+   ],
+   "title": "Hip-hop verses",
+   "text": "A verse is 16 bars; write to the beat. Stack multisyllabic and internal rhymes (lyrical miracle / spiritual individual), chain rhymes across bars, land a punchline at the end of each couplet. Slant rhymes keep the flow natural. Slang and place names build persona. Ad-libs on every other bar; the hook is simple, sung or chanted."
+  },
+  {
+   "id": "rap-flow",
+   "tags": [
+    "rap",
+    "hip-hop",
+    "pacing"
+   ],
+   "title": "Flow and cadence",
+   "text": "Flow beats vocabulary. Keep a steady syllable count per bar, then break it once for emphasis. Vary the pocket: a fast run, then three words and space. Double your own last words for weight. Read it over a metronome; if a bar stumbles, cut syllables, not the idea."
+  },
+  {
+   "id": "pop",
+   "tags": [
+    "pop",
+    "chorus",
+    "hook",
+    "backing-vocals"
+   ],
+   "title": "Pop",
+   "text": "Universal theme, direct words, no puzzles. Verse-chorus, strict lengths, a pre-chorus that lifts. Chorus in AABB or ABAB with clear rhymes that land, near rhymes to stay modern. Stacked harmonies and (ooh) pads are essential in the chorus; light ad-libs in transitions. Think melody first: keep phrases even and singable."
+  },
+  {
+   "id": "country",
+   "tags": [
+    "country",
+    "storytelling",
+    "imagery",
+    "small-town"
+   ],
+   "title": "Country",
+   "text": "One concrete story per song; name the truck, the town, the year. ABCB verses that talk, not recite. Chorus states the plain truth the verses circle; second verse moves time forward. Colloquial voice (fixin' to, y'all) only if it is honest. Close two- or three-part harmony on chorus lines, almost no hype ad-libs. A wry turn or punchline earns its place."
+  },
+  {
+   "id": "country-twist",
+   "tags": [
+    "country",
+    "humor",
+    "hook"
+   ],
+   "title": "The country turn",
+   "text": "Many great country songs pivot on the title meaning something new by the last chorus: the same words, a different truth after the bridge. Set the phrase up plainly in chorus one, then let verse 2 or the bridge reveal the second meaning. Wordplay is prized; sappiness is not."
+  },
+  {
+   "id": "rock",
+   "tags": [
+    "rock",
+    "dynamics",
+    "backing-vocals",
+    "adlibs"
+   ],
+   "title": "Rock",
+   "text": "Energy and attitude first. Strong verbs, hard consonants, riff-shaped lines. Chorus AABB or ABAB, made for gang vocals; verses ABCB build to it. Ad-libs (yeah, alright, c'mon) punctuate. The bridge often gives way to a solo: write [Guitar solo] and keep the bridge lyric to four lines. Anthems about defiance, freedom, us against them."
+  },
+  {
+   "id": "emo-hardcore",
+   "tags": [
+    "rock",
+    "punk",
+    "metal",
+    "anger",
+    "slant-rhyme"
+   ],
+   "title": "Post-hardcore, emo, screamo",
+   "text": "Near, dissonant and broken rhymes mirror the tension; perfect rhymes sound too neat. Sections can be two screamed lines. Alternate clean and screamed vocals as call and response; write [Screamed] and [Clean] cues. Specific, visceral images (knuckles white, the hole in the drywall) over generic angst. Harsh consonants are part of the instrument."
+  },
+  {
+   "id": "punk",
+   "tags": [
+    "punk",
+    "rock",
+    "humor",
+    "anger"
+   ],
+   "title": "Punk",
+   "text": "Short, fast, plain. Two-minute structure: verse, chorus, verse, chorus, maybe a shouted bridge. AABB couplets, gang shouts on every chorus line, a slogan for a hook. Wrenched rhymes and sarcasm are allowed; polish is not. Say the thing directly, then say it louder."
+  },
+  {
+   "id": "metal",
+   "tags": [
+    "metal",
+    "imagery",
+    "dynamics"
+   ],
+   "title": "Metal",
+   "text": "Mythic or brutal imagery, big nouns (iron, ash, throne, storm), present tense. Verses can run longer if the riff demands; the chorus still stays 4-8 lines and chantable. Mark dynamics: [Clean intro], [Blast beats], [Breakdown], [Half-time chorus]. Power metal wants soaring open vowels on the chorus; death metal wants hard consonants."
+  },
+  {
+   "id": "folk",
+   "tags": [
+    "folk",
+    "storytelling",
+    "structure"
+   ],
+   "title": "Folk",
+   "text": "Narrative ballads and plain truth. AABA or verse-refrain with no separate chorus is common; verses may run longer if the story earns it. Perfect and near rhymes both fine, ABCB the workhorse. Acoustic imagery, real place names, protest or reflection. Simple two-part harmony on the refrain, no ad-libs."
+  },
+  {
+   "id": "blues",
+   "tags": [
+    "blues",
+    "repetition",
+    "adlibs",
+    "struggle"
+   ],
+   "title": "Blues",
+   "text": "Twelve-bar AAB verse: state the line, repeat it (maybe one word changed), answer it with the rhyming punchline. First person, hardship and resilience, plain talk. Identical rhymes and bent pronunciations feel right. Ad-libs are foundational: oh Lord, have mercy, mmm. Leave gaps for the guitar or harmonica to answer the voice."
+  },
+  {
+   "id": "edm",
+   "tags": [
+    "edm",
+    "repetition",
+    "hook",
+    "dynamics"
+   ],
+   "title": "EDM and dance",
+   "text": "Lyrics serve the drop. One idea, a few short phrases, repeated. Sections built around [Build] and [Drop]; a verse may be four lines, a hook one line chanted. Euphoria, escape, unity, night. Processed vocal chops as (background) rhythm; ad-libs are hey, let's go. Rhyme for rhythm, not meaning."
+  },
+  {
+   "id": "jazz",
+   "tags": [
+    "jazz",
+    "rhyme",
+    "internal-rhyme"
+   ],
+   "title": "Vocal jazz",
+   "text": "Sophisticated and witty: love, city nights, longing, a wink. AABA form, longer melodic phrases, internal and multisyllabic rhymes, near rhymes placed with care. Words must ride a complex melody, so keep syllables flexible. Scat or hums in the intro and outro; harmony BGVs voiced like horns."
+  },
+  {
+   "id": "gospel-worship",
+   "tags": [
+    "gospel",
+    "worship",
+    "faith",
+    "backing-vocals",
+    "repetition"
+   ],
+   "title": "Gospel and worship",
+   "text": "Declare the promise in plain words and repeat it until it is a chant. Call and response between lead and choir in parentheses, building step by step: [Choir enters], [Modulate up], [Drums out, voices only]. Concrete testimony in the verses (the hospital hallway, the empty fridge); the chorus answers with the truth. Ad-libs: yes Lord, hallelujah, mmm."
+  },
+  {
+   "id": "rnb-soul",
+   "tags": [
+    "rnb",
+    "soul",
+    "love",
+    "adlibs"
+   ],
+   "title": "R&B and soul",
+   "text": "Intimate, first person, present tense. Groove-led phrasing with space for melisma and runs; write (ooh), (baby), (yeah) where the singer breathes. Verses tell the specific night; the chorus is a simple plea or vow. Near rhymes keep it conversational. A spoken or whispered bridge is a classic move."
+  },
+  {
+   "id": "satire",
+   "tags": [
+    "satire",
+    "humor",
+    "hook",
+    "rhyme"
+   ],
+   "title": "Satire and parody",
+   "text": "Play the form completely straight; the joke lives in the details, not in winking. Exaggerate one true thing and follow its logic to the end. Set up in the verses, punchline in the last line of the chorus, escalating each time. Rich rhymes and wordplay (sun/son, knight/night), deliberately wrenched rhymes, deadpan personification. Keep it singable."
+  },
+  {
+   "id": "genre-fusion",
+   "tags": [
+    "pop",
+    "rap",
+    "country",
+    "hip-hop",
+    "structure"
+   ],
+   "title": "Genre fusion",
+   "text": "Mix on purpose: a dense rap verse into a simple sung pop chorus; folk story verses over a hip-hop cadence; country details with trap drums. Keep one element stable (the chorus form or the story) so the blend reads as one song, not two stapled together. Name the blend in the sound prompt: country rap, 808s under acoustic guitar and banjo."
+  },
+  {
+   "id": "instrumental",
+   "tags": [
+    "instrumental",
+    "sound-prompt",
+    "dynamics",
+    "synthwave",
+    "lo-fi"
+   ],
+   "title": "Instrumental tracks",
+   "text": "No lyrics: the arrangement is the story. Write sections as bracketed cues with timestamps: [INTRO 0:00-0:20 pads swell, distant guitar], [DROP 0:40 bass hits, strings staccato], [OUTRO fade to sub]. Describe each instrument's role and texture, then the dynamic curve: quiet, build, peak, breakdown, final peak, decay."
+  },
+  {
+   "id": "sound-prompt",
+   "tags": [
+    "sound-prompt",
+    "mood",
+    "tempo"
+   ],
+   "title": "Sound prompt recipe",
+   "text": "One line, under 30 words: genre plus era or reference, vocal tone, three to five instruments, tempo or BPM, production texture, mood. Example: 90s outlaw country, gravelly baritone, telecaster, pedal steel, upright bass, 96 BPM, dry live room, defiant and weary. No lyrics, no commentary."
+  },
+  {
+   "id": "sound-design",
+   "tags": [
+    "sound-prompt",
+    "instrumental"
+   ],
+   "title": "Per-instrument sound design",
+   "text": "When one line is not enough, add a STYLE / MOOD / TEMPO / KEY / PRODUCTION / DYNAMICS block, then one line per instrument: Instrument (role): texture, playing style, processing. Example: Acoustic guitar (porch picking): scraping, raw, close-miked. Vocals: gravel-throated, near spoken, faint harmonies. Nothing clean, no autotune."
+  },
+  {
+   "id": "exclude-prompt",
+   "tags": [
+    "sound-prompt"
+   ],
+   "title": "Exclude prompt",
+   "text": "Plain words separated by spaces, no sentences: autotune edm synth rap drums pop polished. List what would wreck the vibe (a dance beat under a hymn, a screamed vocal on a lullaby). Keep it under a dozen words."
+  },
+  {
+   "id": "tempo",
+   "tags": [
+    "tempo",
+    "sound-prompt",
+    "mood"
+   ],
+   "title": "Tempo guide",
+   "text": "Ballad 60-80 BPM. Slow groove and soul 80-95. Mid-tempo country, pop, rock 95-120. Dance pop, house, disco 118-128. Punk 160-190; drum and bass 170-175. Trap and drill 130-145 with half-time drums so they feel slow and fast at once. Always give the feel with the number: 120 BPM dragging is a different song from 120 driving."
+  },
+  {
+   "id": "mood-words",
+   "tags": [
+    "mood",
+    "sound-prompt"
+   ],
+   "title": "Mood words",
+   "text": "Pick two or three, not ten: defiant, weary, tender, aching, restless, euphoric, menacing, wistful, sly, holy, gritty, hazy, triumphant, grim, playful, lonesome, smoky, sunlit, rain-soaked, late-night. Pair a feeling with a texture (wistful and hazy; menacing and dry) so the producer hears the mix."
+  },
+  {
+   "id": "love",
+   "tags": [
+    "love",
+    "imagery",
+    "cliche"
+   ],
+   "title": "Love songs",
+   "text": "Not you are my everything; which thing, exactly? The way she orders for you, the coat left in your truck. Pick the stage: first look, the long middle, the vow, the fear of losing. One specific scene per verse; the chorus says the simple promise. Avoid heart/apart, fire/desire, forever/together."
+  },
+  {
+   "id": "breakup",
+   "tags": [
+    "breakup",
+    "heartbreak",
+    "storytelling"
+   ],
+   "title": "Breakup and heartbreak",
+   "text": "Decide the verdict first: destroyed, relieved, still calling, or I miss the dog. Show the evidence: the cold coffee, the empty side of the bed, the thousand unanswered calls. Verse 2 is later: the first night out, the box of their stuff. The bridge is the thing you would never say to their face. The chorus states the verdict plainly."
+  },
+  {
+   "id": "longing",
+   "tags": [
+    "longing",
+    "nostalgia",
+    "imagery"
+   ],
+   "title": "Longing",
+   "text": "Distance measured in objects and hours: the time zone, the porch light, the phone face-down. Present tense keeps the ache live. Let the chorus be the wish, unanswered. Slant rhymes and softer trailing syllables suit it; do not resolve the story in the bridge unless the song is about giving up."
+  },
+  {
+   "id": "party-summer",
+   "tags": [
+    "party",
+    "summer",
+    "repetition",
+    "pop"
+   ],
+   "title": "Party and summer songs",
+   "text": "Snapshot, not story: glitter on the floor, flamingos in the pool, the tailgate down. Present tense, short lines, a chant for a hook, call and response in the chorus (Hey!). Verses list vivid details; the bridge is the 3 a.m. moment; the outro repeats the hook with a crowd on it."
+  },
+  {
+   "id": "money-hustle",
+   "tags": [
+    "money",
+    "hustle",
+    "hip-hop",
+    "confidence"
+   ],
+   "title": "Money, hustle, braggadocio",
+   "text": "Brag in specifics: the brand, the block, the number, the year you had nothing. Contrast then and now inside one couplet. Multisyllabic and stacked rhymes prove the skill you are bragging about. A punchline closes every four bars. Keep one honest line about the cost; it makes the flex land."
+  },
+  {
+   "id": "struggle",
+   "tags": [
+    "struggle",
+    "blues",
+    "country",
+    "hip-hop",
+    "faith"
+   ],
+   "title": "Struggle and resilience",
+   "text": "Ground it in a job, a bill, a shift, a diagnosis, a plant that closed. Verse 1 the weight, verse 2 the moment it almost broke, chorus the thing that holds (a person, a promise, plain stubbornness). No moral at the end; the last chorus just stands there. Blues AAB or country ABCB forms fit."
+  },
+  {
+   "id": "nostalgia-small-town",
+   "tags": [
+    "nostalgia",
+    "small-town",
+    "country",
+    "imagery"
+   ],
+   "title": "Nostalgia and small towns",
+   "text": "Name the town and spell it the way it is said, not the way the map has it. Use what is actually there: the grain elevator, the one stoplight, the Friday game, the closed diner, the county road number. Verse 1 then, verse 2 now, bridge what changed. Warm but honest; a little rust on the sign keeps it from being a postcard."
+  },
+  {
+   "id": "faith",
+   "tags": [
+    "faith",
+    "gospel",
+    "worship",
+    "country"
+   ],
+   "title": "Faith songs",
+   "text": "Testimony beats doctrine: the specific night you prayed in the truck. Address God directly or tell the story; do not switch. The chorus is the promise, repeated. Simple perfect rhymes are fine here; the words are meant to be sung by a room. Build toward the last chorus with (choir) and a [Key change]."
+  },
+  {
+   "id": "grief",
+   "tags": [
+    "grief",
+    "imagery",
+    "longing"
+   ],
+   "title": "Grief",
+   "text": "Write the objects they left: the reading glasses, the voicemail, the chair. Small actions instead of the word grief. Present tense for the morning after; past tense for the memory. A bridge that speaks to them directly. No rhyme on the hardest line; let it sit unrhymed. Keep the chorus short and low."
+  },
+  {
+   "id": "anger",
+   "tags": [
+    "anger",
+    "rock",
+    "punk",
+    "hip-hop"
+   ],
+   "title": "Anger",
+   "text": "Hard consonants, short lines, second person (you). Name what they did, not how you feel. Escalate: verse 1 the facts, verse 2 the receipts, bridge the line you have never said, chorus the verdict. Gang vocals or a screamed double on the title. One moment of quiet before the last chorus makes the loud louder."
+  },
+  {
+   "id": "confidence",
+   "tags": [
+    "confidence",
+    "pop",
+    "hip-hop",
+    "hook"
+   ],
+   "title": "Confidence anthems",
+   "text": "Declarative present tense: I am, I do, watch me. Short chorus lines, AAAA or AABB, chantable. Verse 1 who doubted you, verse 2 what you did anyway, bridge a nod to the ones still climbing. Ad-libs (yeah, let's go) and a gang vocal on the title. Skip vague empowerment; name the room you walked into."
+  }
+ ]
+}

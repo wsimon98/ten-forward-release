@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:letterSpacing="0.12"
+            android:singleLine="true"
+            android:text="CHANNEL"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/counts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/dim"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_quick"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:text="QUICK CREATE — JUST DESCRIBE IT"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Name"
+            android:textColor="@color/lav"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel2"
+            android:hint="Late Shift"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="What it is"
+            android:textColor="@color/lav"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/f_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel2"
+            android:gravity="top"
+            android:hint="Small-town late night: two lane roads, second jobs, headlights."
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Colour on the dial"
+                android:textColor="@color/lav"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_color"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:text="TEAL"
+                android:textColor="@color/teal"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="What it sings about (blank = anything)"
+                android:textColor="@color/lav"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_themes"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:text="PICK"
+                android:textColor="@color/gold"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/f_themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel2"
+            android:gravity="top"
+            android:hint="night drive, hometown, breakup"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lbl_styles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="How it should sound — one line per sound, the writer picks one each time"
+            android:textColor="@color/lav"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/f_styles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel2"
+            android:gravity="top"
+            android:hint="English, country rock, warm male baritone, pedal steel, 88 BPM"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:id="@+id/lbl_mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Mood note for the lyric writer (optional)"
+            android:textColor="@color/lav"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/f_mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel2"
+            android:hint="weary but not hopeless"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/peach"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/row_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Song length (seconds)"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/f_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="300"
+                    android:textColor="@color/peach"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keep this many ready"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/f_ahead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="4"
+                    android:textColor="@color/peach"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Men singing (%)"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/f_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:hint="—"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/peach"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covers (%)"
+                    android:textColor="@color/lav"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/f_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/panel2"
+                    android:hint="—"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/peach"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/sw_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Keep making new songs for this channel"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/sw_inst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Instrumental — no singing"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/sw_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Show this channel on the dial"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="SAVE"
+                android:textColor="@color/green"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_make"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="MAKE ONE NOW"
+                android:textColor="@color/gold"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_close"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="CLOSE"
+                android:textColor="@color/orange"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="DELETE"
+                android:textColor="@color/salmon"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/teal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Lyric folders, voices and sound sets are on the web page; this screen holds what a channel needs day to day."
+            android:textColor="@color/muted"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
