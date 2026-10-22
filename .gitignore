@@ -1,0 +1,30 @@
+# everything a run makes
+library/
+loras/
+voices/
+uploads/
+data/
+logs/
+songs/
+venv/
+wan2gp/
+__pycache__/
+*.pyc
+*.log
+*.db
+*.db-wal
+*.db-shm
+wangp/*.json
+Thumbs.db
+desktop.ini
+.DS_Store
+# android build output (the built APK in dist/ is committed)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/builds/
+android/tenforward.jks
+android/keystore.properties
+# your own details (local places for the songs) stay out of git
+personal.json
