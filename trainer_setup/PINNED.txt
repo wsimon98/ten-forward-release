@@ -1,0 +1,2 @@
+ai-toolkit base: b69b98314557f7c8b08e11bbb14e48d959e6ab26
+PR #1069 head: c121017eb8ab448f1b46894c3f0f81fa95524312 (applied as patches/pr1069-yue2-empty-cache.patch, working tree, not committed)

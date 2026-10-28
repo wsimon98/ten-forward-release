@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LCARS, the same palette as the web page -->
+    <color name="bg">#FF000000</color>
+    <color name="panel">#FF12100D</color>
+    <color name="panel2">#FF1A1712</color>
+    <color name="ink">#FFFFD9A0</color>
+    <color name="muted">#FF9A8F7D</color>
+    <color name="dim">#FF665F52</color>
+    <color name="orange">#FFFF9C00</color>
+    <color name="peach">#FFFFCC99</color>
+    <color name="gold">#FFFFCC66</color>
+    <color name="lav">#FF9999CC</color>
+    <color name="blue">#FF99CCFF</color>
+    <color name="teal">#FF66CCCC</color>
+    <color name="green">#FF66CC66</color>
+    <color name="salmon">#FFCC6666</color>
+    <color name="pink">#FFCC6699</color>
+    <color name="red">#FFCC4444</color>
+    <color name="icon_bg">#FF000000</color>
+</resources>

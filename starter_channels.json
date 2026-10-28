@@ -1,0 +1,57 @@
+{
+  "_about": "The channels a fresh install of this release starts with: these stock ones from radio.py, plus the ones defined here in full. Delete this file and a fresh install gets every stock channel instead. Channels already in your database are never removed by this list.",
+  "keep": [
+    "favorites",
+    "late-shift",
+    "engineering",
+    "my-songs"
+  ],
+  "add": [
+    {
+      "id": "sad-boy-pop",
+      "name": "Sad Boy Pop",
+      "color": "pink",
+      "sort": 30,
+      "description": "Sad but catchy pop tunes about heartbreak and growing up, in the lane of Justin Bieber, Joji, and Christian Gates.",
+      "style_prompts": [
+        "English, sad pop, soft male vocal, falsetto hook, acoustic guitar, warm piano, soft pop drums, 80 BPM",
+        "English, lo-fi sad pop, melancholic male vocal, detuned piano, vinyl crackle, slow drums, deep sub bass, 72 BPM",
+        "English, piano ballad, fragile male vocal, felt piano, soft strings, no drums until the last chorus, 66 BPM",
+        "English, dark pop, melodic male vocal, light autotune, clean electric guitar loop, 808 bass, soft trap hi hats, 140 BPM",
+        "English, emo pop, sad melodic male vocal, acoustic guitar loop, 808 bass, soft trap drums, 150 BPM",
+        "English, bedroom pop, hushed male vocal, reverb guitar, soft synth pads, laid back drums, 84 BPM",
+        "English, dreamy synth pop, airy male vocal, falsetto, soft synths, sub bass, slow dance drums, 88 BPM",
+        "English, acoustic pop ballad, tender male vocal, fingerpicked acoustic guitar, soft pads, light percussion, 76 BPM",
+        "English, alt pop, moody male vocal, muted piano chords, finger snaps, sub bass, sparse beat, 96 BPM"
+      ],
+      "themes": [
+        "love-new",
+        "love-deep",
+        "breakup",
+        "waiting on her",
+        "summer-love",
+        "night-drive",
+        "hometown",
+        "party",
+        "morning-after",
+        "road-trip",
+        "suicide",
+        "depression",
+        "lonliness"
+      ],
+      "mood": "sad but catchy, quiet and honest, a little numb; not every song is about her leaving: growing up, staying up too late, friends who changed, being fine in public, falling for somebody anyway, the one you never told; one real detail from their life per verse, the kind you would say out loud (the town we both grew up in, her little brother still waving at me, the car she drove senior year, my old room at my mom's house, the bar we used to close down)",
+      "lyrics_folder": "sad-boy-pop",
+      "mode": 0,
+      "duration_s": 255,
+      "auto_generate": 1,
+      "keep_ahead": 5,
+      "lyric_policy": "mixed",
+      "replay_policy": "fresh",
+      "instrumental": 0,
+      "instrumental_chance": 0.0,
+      "explicit": 1,
+      "male_ratio": 1.0,
+      "cover_chance": 0.35
+    }
+  ]
+}
